@@ -1,6 +1,6 @@
 # Odds Converter Flask App
 
-This Odds Converter is a web-based tool built with Flask, designed to convert betting odds between different formats, including decimal, fractional, American, and percentage odds. It's an easy-to-use app for sports betting enthusiasts and professionals.
+Odds Converter is a web-based tool which is designed to convert betting odds between different formats, including decimal, fractional, American, and percentage odds. It's an easy-to-use app for sports betting enthusiasts and professionals.
 
 ## Features
 
