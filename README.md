@@ -2,6 +2,8 @@
 
 Odds Converter is a web-based tool which is designed to convert betting odds between different formats, including decimal, fractional, American, and percentage odds. It's an easy-to-use app for sports betting enthusiasts and professionals.
 
+Feel free to put this app on your site. I only ask that you leave the link to my site in the HTML.
+
 ## Features
 
 - **Multiple Formats**: Supports decimal, fractional, American, and percentage odds.
@@ -44,6 +46,8 @@ Odds Converter is a web-based tool which is designed to convert betting odds bet
 ## Usage
 
 Enter the odds in your chosen format, select the format you wish to convert to, and click the "Convert" button. The converted odds will be displayed immediately.
+
+If you like it, feel free to put this app on your site. I only ask that you leave the link to my site in the HTML.
 
 ## Contributing
 
