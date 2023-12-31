@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odds Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Odds Converter</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="/" method="post">
+                <div>
+                    <label for="odds">Enter Odds:</label>
+                    <input type="text" id="odds" name="odds" placeholder="e.g., 2.5 or 5/1 or -120" required pattern="^-?\d+(/\d+)?|\d+\.\d+$">
+                </div>
+                <div>
+                    <label for="format">Select Format:</label>
+                    <select id="format" name="format">
+                        <option value="decimal">Decimal</option>
+                        <option value="fractional">Fractional</option>
+                        <option value="american">American</option>
+                        <option value="percentage">Percentage</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Convert">
+                </div>
+            </form>
+        </section>
+
+        {% if converted_odds %}
+        <section>
+            <h2>Converted Odds:</h2>
+            <table>
+                <tr>
+                    <th>Format</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Decimal</td>
+                    <td>{{ converted_odds.decimal }}</td>
+                </tr>
+                <tr>
+                    <td>Fractional</td>
+                    <td>{{ converted_odds.fractional }}</td>
+                </tr>
+                <tr>
+                    <td>American</td>
+                    <td>{{ converted_odds.american }}</td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td>{{ converted_odds.percentage }}%</td>
+                </tr>
+            </table>
+        </section>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>Developed by <a href="https://sports365.biz/" target="_blank">Sports365</a></p>
+    </footer>
+</body>
+</html>
